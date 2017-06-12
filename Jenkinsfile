@@ -8,7 +8,7 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
-                sh testbash.sh
+                sh 'testbash.sh'
             }
         }
     }
