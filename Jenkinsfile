@@ -8,7 +8,9 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
-                sh 'testbash.sh'
+                sh './testbash.sh'
+                sh '~/learn-jenkins/pipeline-1/testbash.sh'
+                sh '/home/ramesh/learn-jenkins/pipeline-1/testbash.sh'
             }
         }
     }
